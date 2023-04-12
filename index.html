@@ -5,13 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Simple Starter</title>
+    <title>TOT ფინალი</title>
 </head>
 <body>
-    <h1>ეს არის მარტივი სასტარტო პროექტი</h1>
-
-    <p>აუცილებლად წაიკითხეთ <a  target="_blank" href="README.md" >README.md</a> ფაილი </p>
-    <h3>ნინო მთავრული</h3>
+    <form action="./success.html" class="example-form">
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input name="gender-selection" id="male" type="radio">
+                <label for="male">Male</label>
+    
+                <input name="gender-selection" id="female" type="radio">
+                <label for="female">Female</label>
+    
+                <input name="gender-selection" id="not" type="radio">
+                <label for="not">I don't want to tell</label>
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <div class="checkbox-group">
+                <input id="terms" type="checkbox">
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
     <script src="js/main.min.js"></script>
 </body>
 </html>

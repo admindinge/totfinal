@@ -68,3 +68,69 @@ h3, h4, h5, h6 {
     margin: 1rem 0;
     color: var(--secondary-color);
   }
+
+  .example-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px auto;
+    max-width: 500px;
+    border: 1px solid #3c64b1;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: bisque;
+    color: #3c64b1;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out 2s forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    background-color: bisque;
+  }
+  
+  .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    
+  }
+  
+  input[type="checkbox"], input[type="radio"] {
+      background-color: bisque;
+  }
+  
+  button[type="reset"], button[type="submit"] {
+    margin-right: 10px;
+    border: none;
+    background-color: #3c64b1;
+    color: bisque;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 3px;
+  }
+  
+  button[type="reset"]:hover, button[type="submit"]:hover {
+    background-color: #1a306c;
+  }
