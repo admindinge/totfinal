@@ -9,6 +9,22 @@
 </head>
 <body>
     <form action="./success.html" class="example-form">
+       
+        <div class="form-group">
+            <div class="text-group">
+                <input type="text" name="name" placeholder="Enter your name">
+                
+                <input type="password" name="password" placeholder="Enter your password">
+
+                <input type="email" name="email" placeholder="Enter your email">
+        
+                <input type="number" name="age" min="18" max="99" placeholder="Enter your age">
+        
+                <input type="date" name="birthdate" placeholder="Enter your birthdate">
+        
+                <input type="time" name="appointment_time" placeholder="Enter your appointment time">
+            </div>
+        </div>
         <div class="form-group">
             <label>Gender:</label>
             <div class="radio-group">
@@ -22,17 +38,29 @@
                 <label for="not">I don't want to tell</label>
             </div>
         </div>
-    
         <div class="form-group">
+            
             <div class="checkbox-group">
+                <input id="inreading" type="checkbox" name="hobbies[]" value="reading">
+                <label for="reading">Reading</label>
+
+                <input id="travelling" type="checkbox" name="hobbies[]" value="travelling">
+                <label for="travelling">Travelling</label>
                 <input id="terms" type="checkbox">
                 <label for="terms">I agree to the terms and conditions</label>
             </div>
         </div>
+        
+     
+            
+        
     
         <div class="form-group">
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
+            <div class="button-grup">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+            
         </div>
     </form>
     <script src="js/main.min.js"></script>

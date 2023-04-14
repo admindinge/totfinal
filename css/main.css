@@ -73,11 +73,11 @@ h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px auto;
+    margin: 50px auto;
     max-width: 500px;
     border: 1px solid #3c64b1;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: bisque;
     color: #3c64b1;
     text-transform: capitalize;
@@ -95,27 +95,52 @@ h3, h4, h5, h6 {
     }
   }
   
+
   .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+ 
+    margin: 20px auto;
+    /* border: 1px solid #3c64b1; */
+    padding: 10px;
+    width: 100%;
   }
   
-  .radio-group, .checkbox-group {
+  .radio-group, .checkbox-group, .text-group {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
     align-items: center;
     margin-top: 10px;
-    background-color: bisque;
+    /* background-color: bisque; */
+    min-width: 100%;
   }
-  
-  .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
-    margin-right: 10px;
-    
+  .text-group{
+    flex-direction: column;
+    min-width: 100%;
+
+  }
+
+  .text-group input {
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid #3c64b1; */
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .radio-group {
+    justify-content: space-between;
+  }
+  .checkbox-group{
+    flex-direction: column;
+  }
+  .radio-group input[type="radio"], 
+  .checkbox-group input[type="checkbox"],
+  .text-group input {
+    /* margin-right: 10px; */
+    /* background-color: bisque; */
+    opacity: 0.5;
   }
   
   input[type="checkbox"], input[type="radio"] {
-      background-color: bisque;
+      
   }
   
   button[type="reset"], button[type="submit"] {
